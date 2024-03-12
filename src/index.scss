@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+    @apply flex w-screen h-screen bg-[#1b1b1b];
+}
+
+.coming_soon {
+    @apply w-[50%] text-white text-center text-9xl font-bold uppercase m-auto
+}

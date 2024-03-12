@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#navigation {
+    @apply flex flex-col w-fit gap-20 ml-20 my-auto;
+
+    a {
+        @apply relative cursor-pointer;
+
+        p {
+            @apply w-fit hover:text-white/10 text-white text-5xl font-bold transition-all z-50
+        }
+
+        .animation_in_bar {
+            @apply absolute flex top-0 bottom-0 my-auto h-20 hover:bg-indigo-500/40 hover:w-80 w-52 transition-all
+        }
+    }
+}
