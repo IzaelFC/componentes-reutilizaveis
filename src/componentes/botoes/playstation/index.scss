@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#PlayStationButton {
+    @apply flex flex-col gap-5 size-full bg-[#202020] text-white items-center justify-center rounded-2xl m-auto;
+
+    svg {
+        @apply w-10 h-10 hover:shadow-[0px_0px_25px_2px] cursor-pointer transition-all rounded-full
+    }
+
+    :nth-child(1) {
+        @apply mx-auto
+    }
+
+    :nth-child(2) {
+        @apply mx-auto
+    }
+
+    :nth-child(3) {
+        @apply mx-auto
+    }
+
+    .middle {
+        @apply flex w-full mx-auto
+    }
+
+    .triangle {
+        @apply hover:text-emerald-500
+    }
+
+    .square {
+        @apply hover:text-pink-500
+    }
+
+    .circle {
+        @apply hover:text-red-500
+    }
+
+    .x {
+        @apply hover:text-blue-500
+    }
+}

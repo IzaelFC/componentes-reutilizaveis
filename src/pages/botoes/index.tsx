@@ -1,7 +1,12 @@
+import { PlayStationButton } from '../../componentes/botoes/playstation'
 import './index.scss'
 
 export function Botoes() {
     return (
-        <div className='coming_soon'>Coming soon</div>
+        <div id='botoes'>
+            <section>
+                <PlayStationButton />
+            </section>
+        </div>
     )
 }
