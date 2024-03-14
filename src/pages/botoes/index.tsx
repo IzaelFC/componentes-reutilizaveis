@@ -1,4 +1,5 @@
-import { PlayStationButton } from '../../componentes/botoes/playstation'
+import { PlayStationButton } from '@/components/botoes/playstation'
+
 import './index.scss'
 
 export function Botoes() {
