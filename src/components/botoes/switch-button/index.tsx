@@ -5,7 +5,7 @@ export function SwitchButton(){
         <main id="switch-button">
             <input id='switch' type="checkbox" />
             
-            <label for='switch'>
+            <label htmlFor='switch'>
                 <span></span>
             </label>
         </main>
