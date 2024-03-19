@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#switch-button {
+    @apply flex size-full items-center justify-center;
+
+    input {
+        @apply hidden
+    }
+
+    label {
+        @apply relative flex w-20 h-10 bg-white rounded-full
+    }
+
+    span {
+        @apply absolute top-0 bottom-0 my-auto size-10 rounded-full bg-red-500 transition-all duration-500
+    }
+
+    input:checked ~ label > span {
+        @apply ml-10 bg-green-500
+    }
+}
