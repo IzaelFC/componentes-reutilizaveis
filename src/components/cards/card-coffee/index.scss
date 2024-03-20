@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#card-coffee {
+    @apply flex w-full h-[50%] gap-5 m-auto bg-[#026A37] text-white items-center justify-center rounded-2xl;
+
+    .cafe-logo {
+        @apply text-center;
+
+        svg {
+            @apply w-auto h-10 mx-auto
+        }
+        
+        h1 {
+            @apply text-lg uppercase font-thin
+        }
+
+        span {
+            @apply text-xl font-bold;
+        }
+    }
+
+    .cafe-bar {
+        @apply flex flex-col w-[3px] h-[60%];
+
+        :first-child {
+            @apply h-[30%] bg-[#033917]
+        }
+
+        :last-child {
+            @apply w-[1px] mx-auto h-[70%] bg-white
+        }
+    }
+
+    .cafe-informations {
+        @apply flex flex-col gap-2 text-xs;
+
+        span {
+            @apply font-thin;
+
+            span {
+                @apply text-sm font-[900] tracking-[0.3rem] ml-2
+            }
+        }
+
+        > div {
+            @apply flex gap-2;
+
+            div:first-child {
+                @apply flex flex-col justify-between text-center text-[#033917] font-mono font-bold
+            }
+
+            div:last-child {
+                @apply flex flex-col text-left font-thin gap-1;
+            }
+        }
+    }
+}
