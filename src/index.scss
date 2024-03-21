@@ -4,7 +4,7 @@
  
 @layer base {
   #root {
-    @apply flex w-screen h-screen bg-[#1b1b1b];
+    @apply flex size-full bg-[#1b1b1b] p-10;
   }
 
   .coming_soon {
@@ -86,6 +86,7 @@
   * {
     @apply border-border;
   }
+  
   body {
     @apply bg-background text-foreground;
   }
