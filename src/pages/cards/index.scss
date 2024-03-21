@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 #cards {
-    @apply grid grid-cols-2 gap-20 m-auto
+    @apply w-max grid grid-cols-2 gap-20 m-auto p-20
 }
 
 #cards > section {

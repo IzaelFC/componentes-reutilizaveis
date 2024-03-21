@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 #navigation {
-    @apply flex flex-col w-fit gap-20 ml-20 my-auto;
+    @apply flex flex-col w-screen h-screen gap-20 ml-20 my-auto justify-center;
 
     a {
-        @apply relative cursor-pointer;
+        @apply relative cursor-pointer w-fit;
 
         p {
             @apply w-fit hover:text-white/10 text-white text-5xl font-bold transition-all z-50

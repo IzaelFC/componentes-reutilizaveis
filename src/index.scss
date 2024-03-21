@@ -4,11 +4,11 @@
  
 @layer base {
   #root {
-    @apply flex size-full bg-[#1b1b1b] p-10;
+    @apply flex w-full h-full bg-[#1b1b1b];
   }
 
   .coming_soon {
-    @apply w-[50%] text-white text-center text-9xl font-bold uppercase m-auto
+    @apply flex w-[50%] h-screen text-white text-center text-9xl font-bold uppercase items-center justify-center m-auto
   }
 
   .inspiration {

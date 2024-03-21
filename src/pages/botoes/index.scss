@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Alterar para w-max */
 #botoes {
-    @apply grid grid-cols-3 gap-20 m-auto
+    @apply w-screen h-screen grid grid-cols-3 gap-20 m-auto p-20
 }
 
 #botoes > section {

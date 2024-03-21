@@ -9,7 +9,7 @@ import { Paginas } from "./pages/paginas"
 export function App() {
   return (
     <BrowserRouter>
-      <Routes>
+      <Routes >
         <Route path="/" element={<Home />} />
         <Route path="/botoes" element={<Botoes />} />
         <Route path="/cards" element={<Cards />} />
