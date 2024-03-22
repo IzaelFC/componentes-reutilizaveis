@@ -5,19 +5,15 @@
 #switch-button {
     @apply flex size-full items-center justify-center;
 
-    input {
-        @apply hidden
-    }
-
-    label {
+    section {
         @apply relative flex w-20 h-10 bg-white rounded-full
     }
 
-    span {
-        @apply absolute top-0 bottom-0 my-auto size-10 rounded-full bg-red-500 transition-all duration-500
+    .switch-color {
+        @apply absolute top-0 bottom-0 my-auto ml-10 size-10 rounded-full bg-green-500 transition-all duration-500
     }
 
-    input:checked ~ label > span {
-        @apply ml-10 bg-green-500
+    .switch-color2 {
+        @apply absolute top-0 bottom-0 my-auto size-10 rounded-full bg-red-500 transition-all duration-500
     }
 }
