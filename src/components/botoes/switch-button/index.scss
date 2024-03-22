@@ -9,11 +9,11 @@
         @apply relative flex w-20 h-10 bg-white rounded-full
     }
 
-    .switch-color {
+    .switch-color-on {
         @apply absolute top-0 bottom-0 my-auto ml-10 size-10 rounded-full bg-green-500 transition-all duration-500
     }
 
-    .switch-color2 {
+    .switch-color-off {
         @apply absolute top-0 bottom-0 my-auto size-10 rounded-full bg-red-500 transition-all duration-500
     }
 }

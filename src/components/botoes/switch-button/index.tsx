@@ -12,7 +12,7 @@ export function SwitchButton(){
     return (
         <main id="switch-button">
             <section onClick={ handleSwitch }>
-                <span className={ switchColor ? 'switch-color' : 'switch-color2' }></span>
+                <span className={ switchColor ? 'switch-color-on' : 'switch-color-off' }></span>
             </section>
         </main>
     )
