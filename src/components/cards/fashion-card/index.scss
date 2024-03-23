@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Migra';
+    src: url("src/assets/fashion-card/font/Migra/Migra-Extralight.ttf");
+}
+
+#fashion-card {
+    @apply flex flex-col bg-orange-500 text-left text-black p-4 gap-2;
+
+    > .title {
+        font-family: 'Migra';
+        @apply flex flex-col leading-7 text-balance text-center text-3xl mx-auto;
+
+        > div {
+            @apply flex ml-3;
+
+            span {
+                @apply text-sm
+            }
+        }
+    }
+
+    > img {
+        @apply h-[50vh] object-cover
+    }
+
+    > p {
+        @apply text-[8px] text-balance
+    }
+
+    > span {
+        @apply w-fit bg-black text-center text-orange-500 uppercase mt-2 px-5 py-1 rounded-full
+    }
+}
