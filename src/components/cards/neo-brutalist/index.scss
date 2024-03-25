@@ -3,22 +3,22 @@
 @tailwind utilities;
 
 #neo-brutalist {
-    @apply flex gap-5 bg-transparent size-full;
+    @apply flex gap-5 bg-transparent text-left size-full;
 
     .section-cards {
-        @apply flex flex-col text-white hover:text-orange-500 space-y-5 p-5 cursor-pointer transition-all duration-500 border-4 border-white hover:border-orange-500
-    }
-    
-    h1 {
-        @apply flex flex-col w-14 text-xl font-bold
-    }
-    
-    button {
-        @apply bg-white text-black font-bold m-auto px-3 py-1 border border-white rounded-md shadow-[3px_4px_0px_0px] hover:shadow-[1px_2px_0px_0px] shadow-black hover:translate-y-0.5 transition-all
-    }
-    
-    h1 > span {
-        @apply bg-orange-500 w-0 h-1 ease-linear transition-all
+        @apply flex flex-col size-full text-white hover:text-orange-500 space-y-5 p-5 cursor-pointer transition-all duration-500 border-4 border-white hover:border-orange-500;
+
+        h1 {
+            @apply flex flex-col w-14 text-xl font-bold
+        }
+        
+        button {
+            @apply size-fit bg-white text-black font-bold mx-auto px-3 py-1 border border-white rounded-md shadow-[3px_4px_0px_0px] hover:shadow-[1px_2px_0px_0px] shadow-black hover:translate-y-0.5 transition-all
+        }
+        
+        h1 > span {
+            @apply bg-orange-500 w-0 h-1 ease-linear transition-all
+        }
     }
 
     :hover button {

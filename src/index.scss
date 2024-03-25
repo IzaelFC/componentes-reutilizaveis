@@ -12,7 +12,7 @@
   }
 
   .inspiration {
-    @apply absolute bottom-0 p-5 text-[10px] text-white;
+    @apply absolute bottom-0 sm:p-5 p-2 text-[10px] text-white;
 
     a {
       @apply hover:text-cyan-500 text-cyan-300 transition-all

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 #card-coffee {
-    @apply flex w-full h-[50%] gap-5 m-auto bg-[#026A37] text-white items-center justify-center rounded-2xl;
+    @apply flex w-full sm:h-[50%] h-[40%] gap-5 m-auto bg-[#026A37] text-white items-center justify-center rounded-2xl;
 
     .cafe-logo {
         @apply text-center;
