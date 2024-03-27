@@ -8,6 +8,7 @@ import { NeoBrutalist } from '@/components/cards/neo-brutalist'
 import { CardCoffee } from "@/components/cards/card-coffee"
 import { EventTicket } from "@/components/cards/event-ticket"
 import { FashionCard } from "@/components/cards/fashion-card"
+import { ReminderCard } from "@/components/cards/reminder-card"
 
 import './index.scss'
 
@@ -61,6 +62,19 @@ export function Cards() {
                     <DialogContent className="w-[45vh] h-auto px-0 sm:py-14 py-10">
                         <FashionCard />
                         <p className="inspiration">Inspiração: <a href="https://dribbble.com/shots/16292700-Fashion-cards" target="_blank">https://dribbble.com/shots/16292700-Fashion-cards</a></p>
+                    </DialogContent>
+                </Dialog>
+            </section>
+
+            <section>
+                <Dialog>
+                    <DialogTrigger className="size-full">
+                        <ReminderCard />
+                    </DialogTrigger>
+
+                    <DialogContent className="w-[40vh] h-[85vh] pb-20">
+                        <ReminderCard />
+                        <p className="inspiration">Inspiração: <a href="https://br.pinterest.com/pin/752101206535318674" target="_blank">https://br.pinterest.com/pin/752101206535318674</a></p>
                     </DialogContent>
                 </Dialog>
             </section>

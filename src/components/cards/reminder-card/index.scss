@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#reminder-card {
+    @apply size-full flex flex-col bg-white items-center justify-center p-2 rounded-tl-[10rem];
+
+    img {
+        @apply w-full h-[70%] object-cover rounded-tl-[9.5rem]
+    }
+
+    .reminder-text {
+        @apply relative flex flex-col text-2xl text-white font-extrabold uppercase mt-auto;
+
+        p {
+            -webkit-text-stroke: 1px black;
+        }
+
+        :nth-child(1) {
+            @apply mt-2
+        }
+
+        :nth-child(2) {
+            @apply absolute top-0 bottom-0 my-auto translate-y-[25%] text-black
+        }
+
+        :nth-child(3) {
+            @apply mb-6
+        }
+    }
+}
