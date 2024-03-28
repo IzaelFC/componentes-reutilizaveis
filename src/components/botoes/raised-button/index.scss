@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#raised-button {
+    @apply flex gap-5 size-full items-center justify-center;
+
+    > button {
+        @apply text-xl bg-white focus:text-white text-black p-1 skew-x-12 -rotate-45 focus:mb-10 focus:shadow-[-15px_15px_10px_0px] rounded transition-all duration-500
+    }
+
+    :nth-child(1):focus {
+        @apply bg-black shadow-black
+    }
+
+    :nth-child(2):focus {
+        @apply bg-orange-500 shadow-orange-500
+    }
+
+    :nth-child(3):focus {
+        @apply bg-blue-500 shadow-blue-500
+    }
+
+    :nth-child(4):focus {
+        @apply bg-red-500 shadow-red-500
+    }
+}

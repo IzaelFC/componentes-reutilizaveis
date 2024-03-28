@@ -10,6 +10,7 @@ import { PlayStationButton } from '@/components/botoes/playstation'
 import { SwitchButton } from "@/components/botoes/switch-button"
 
 import './index.scss'
+import { RaisedButton } from "@/components/botoes/raised-button";
 
 export function Botoes() {
     return (
@@ -39,6 +40,21 @@ export function Botoes() {
                     
                     <DialogContent className="size-[50vh]">
                         <SwitchButton />
+                    </DialogContent>
+                </Dialog>
+            </section>
+
+            <section>
+                <Dialog>
+                    <DialogTrigger className="absolute top-0 right-0 mt-3 mr-3 size-fit">
+                        <IoExpand />
+                    </DialogTrigger>
+
+                    <RaisedButton />
+
+                    <DialogContent className="size-[50vh]">
+                        <RaisedButton />
+                        <p className="inspiration">Inspiração: <a href="https://br.pinterest.com/pin/976225656716101790" target="_blank">https://br.pinterest.com/pin/976225656716101790</a></p>
                     </DialogContent>
                 </Dialog>
             </section>
