@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --black: #313131;
+    --green: #B9FF66;
+}
+
+#digital-marketing {
+    @apply w-full flex flex-col gap-20 bg-white text-left text-[--black] font-['Space_Grotesk'] p-10 overflow-y-auto rounded-xl;
+
+    > header {
+        @apply w-full flex font-semibold font-['PT_Mono'] justify-between;
+
+        > img {
+            @apply w-fit h-7 my-auto
+        }
+
+        > section {
+            @apply flex w-full justify-between;
+
+            .navigation {
+                @apply max-w-[70%] w-full flex my-auto ml-auto justify-around transition-all;
+
+                a:hover {
+                    @apply underline
+                }
+            }
+            
+            button {
+                @apply px-5 py-3 border border-[--black] rounded-lg transition-all duration-500
+            }
+
+            button:hover {
+                @apply bg-[--black] text-[--green] transition-all duration-500
+            }
+        }
+    }
+
+    > main {
+        @apply flex flex-col gap-20;
+
+        > #about-us {
+            @apply flex gap-10 justify-between;
+
+            > div {
+                @apply w-[40%] flex flex-col justify-around;
+
+                > h1 {
+                    @apply text-5xl font-semibold
+                }
+
+                button {
+                    @apply bg-[--black] text-white px-5 py-3 mr-auto border border-transparent rounded-lg transition-all duration-500
+                }
+
+                button:hover {
+                    @apply bg-[--green] text-[--black] border-[--black]
+                }
+            }
+
+            img {
+                @apply w-[45%]
+            }
+        }
+
+        > #services {
+            @apply flex justify-between;
+
+            > img {
+                @apply my-auto h-20
+            }
+        }
+
+        > #use-cases {
+            @apply flex flex-col gap-20;
+
+            > :first-child {
+                @apply flex gap-10;
+                 
+                h1 {
+                    @apply bg-[--green] text-2xl font-bold my-auto p-1 rounded
+                }
+
+                p {
+                    @apply max-w-[50%] text-balance text-sm my-auto
+                }
+            }
+
+            > .cards {
+                @apply grid grid-cols-2 gap-10;
+
+                img {
+                    @apply h-36
+                }
+
+                > section {
+                    @apply flex text-sm justify-between p-10 border border-[--black] rounded-3xl;
+
+                    > div {
+                        @apply flex flex-col justify-between;
+
+                        button {
+                            @apply flex w-fit gap-2 hover:underline;
+
+                            > * {
+                                @apply bg-[--black] text-[--green] my-auto p-1 rounded-full
+                            }
+                        }
+                    }
+                }
+
+                .title {
+                    @apply flex flex-col text-xl font-semibold;
+
+                    span {
+                        @apply bg-[--green] p-0.5 rounded
+                    }
+                }
+
+                > :nth-child(1), > :nth-child(4) {
+                    @apply border-b-8
+                }
+
+                > :nth-child(2), > :nth-child(3) {
+                    @apply bg-[#1F1F1F];
+
+                    .title > span {
+                        @apply bg-white text-[--balck]
+                    }
+                    
+                    button {
+                        @apply text-white;
+
+                        > * {
+                            @apply bg-white text-[--black]
+                        }
+                    }
+                }
+            }
+        }
+
+        > #pricing {
+            @apply relative flex gap-10 bg-[#F3F3F3] p-10 justify-between rounded-3xl;
+
+            > div {
+                @apply w-[50%] flex flex-col gap-5 justify-between;
+
+                h1 {
+                    @apply text-3xl font-semibold
+                }
+
+                p {
+                    @apply text-sm text-balance
+                }
+
+                button {
+                    @apply w-fit bg-[--black] text-sm text-white font-[600] font-['PT_Mono'] py-3 px-5 border border-transparent rounded-lg transition-all duration-500
+                }
+
+                button:hover {
+                    @apply bg-[--green] text-[--black] border-[--black]
+                }
+            }
+
+            img {
+                @apply absolute right-0 bottom-0 -mb-5 w-[40%]
+            }
+        }
+
+        > #blog {
+            @apply flex flex-col gap-20;
+
+            > div {
+                @apply flex gap-10;
+
+                h1 {
+                    @apply bg-[--green] text-2xl font-bold p-1 my-auto rounded
+                }
+
+                > p {
+                    @apply w-[60%] text-sm my-auto
+                }
+            }
+
+            .blog {
+                @apply bg-[--black] text-white p-10 rounded-3xl;
+
+                .separate {
+                    @apply w-1 h-full bg-white
+                }
+
+                > section {
+                    @apply flex flex-col gap-5
+                }
+
+                button {
+                    @apply w-fit flex gap-2 text-[--green] items-center hover:underline
+                }
+            }
+        }
+    }
+}

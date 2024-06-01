@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#pages {
+    @apply w-max gap-20 m-auto sm:p-20 py-10
+}
+
+#pages > section {
+    @apply flex flex-col gap-5 w-full h-[80vh] bg-[#202020] items-center justify-center rounded-2xl
+}
